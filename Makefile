@@ -9,7 +9,7 @@ all:
 insert: all remove
 	${SUDO} insmod ${MOD_NAME}
 
-remove: all
+remove:
 	${SUDO} rmmod ${MOD_NAME}
 
 clean:
