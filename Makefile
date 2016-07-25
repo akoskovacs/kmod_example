@@ -10,7 +10,7 @@ insert: all remove
 	${SUDO} insmod ${MOD_NAME}
 
 remove:
-	${SUDO} rmmod ${MOD_NAME}
+	@-${SUDO} rmmod ${MOD_NAME}
 
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=${MOD_DIR} clean
